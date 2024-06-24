@@ -9,8 +9,13 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.on("connection", (socket) => {
+server.on("connection", () => {
   console.log("new connection is connected");
 });
 
 server.listen(8080);
+
+
+
+
+
